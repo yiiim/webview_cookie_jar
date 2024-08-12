@@ -1,15 +1,11 @@
 # webview_cookie_jar
 
-A new Flutter plugin project.
+Implement [cookie_jar](https://pub.dev/packages/cookie_jar). using the native webview to manage cookies. Any cookie operations will affect the webview, and any cookie operations within the webview will affect this cookie.
 
-## Getting Started
+Supported platforms: iOS, Android.
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/to/develop-plugins),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+## Usage
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+`WebViewCookieJar.cookieJar` obtains a `CookieJar`. For usage, refer to [cookie_jar](https://pub.dev/packages/cookie_jar).
 
+> `delete(Uri uri, [bool withDomainSharedCookie = false])` is not implemented, calling this method will do nothing Please use the `deleteCookie` method.

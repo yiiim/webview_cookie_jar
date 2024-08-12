@@ -1,7 +1,7 @@
 name: webview_cookie_jar
-description: "A new Flutter plugin project."
+description: "Implement cookie_jar, using the native webview to manage cookies"
 version: 0.0.1
-homepage:
+homepage: https://github.com/yiiim/webview_cookie_jar
 
 environment:
   sdk: ^3.5.0
