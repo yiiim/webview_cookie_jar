@@ -1,18 +1,9 @@
 package com.example.webview_cookie_jar
 
-import androidx.annotation.NonNull
-
 import io.flutter.embedding.engine.plugins.FlutterPlugin
-import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
-import io.flutter.plugin.common.MethodChannel.MethodCallHandler
-import io.flutter.plugin.common.MethodChannel.Result
 import android.os.Build
-import android.os.Handler
-import android.os.Looper
 import android.webkit.CookieManager
-import android.webkit.WebView
-import java.net.URL
 
 /** WebviewCookieJarPlugin */
 class WebviewCookieJarPlugin: FlutterPlugin {
