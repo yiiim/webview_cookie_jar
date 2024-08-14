@@ -49,7 +49,7 @@ class _MyAppState extends State<MyApp> {
                     child: const Text("Get Cookie By Dart"),
                     onPressed: () async {
                       final cookies = await WebViewCookieJar.cookieJar.loadForRequest(Uri.parse("https://flutter.dev"));
-                      if (context.mounted == false) {
+                      if (!context.mounted) {
                         return;
                       }
                       showGeneralDialog(
